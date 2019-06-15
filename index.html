@@ -1,28 +1,41 @@
+<!--The HTML5 doctype (document type) declaration is very simple->
+<!DOCTYPE HTML>
+<!--All page content is inside the HTML element-->
 <html>
-<!-- Text between angle brackets is an HTML tag and is not displayed.
-Most tags, such as the HTML and /HTML tags that surround the contents of
-a page, come in pairs; some tags, like HR, for a horizontal rule, stand 
-alone. Comments, such as the text you're reading, are not displayed when
-the Web page is shown. The information between the HEAD and /HEAD tags is 
-not displayed. The information between the BODY and /BODY tags is displayed.-->
+<!--Head element content is not visible in a browser window-->
 <head>
-<title>Welcome to the world of cloud.</title>
+<!--The UTF-8 character set supports all symbols and characters-->
+<meta charset="UTF-8">
+<title>HTML Template</title>
+<!—The following line links to our style sheet file-->
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<!-- The information between the BODY and /BODY tags is displayed.-->
+<!--Content visible in the browser's window is inside the HTML element-->
 <body>
-<h1>Welcome to the World of Cloud & Technology.</h1>
-<p>Be <b>bold</b> in stating your key points. Put them in a list: </p>
+<!--All our content is enclosed in the wrapper ID style-->
+<div id="wrapper">
+<h1>Heading One Content</h1>
+<!--column-2 ID style is floated left and used for navigation-->
+<div id="column-2">
+<h2>Links...</h2>
 <ul>
-<li>The first item in your list</li>
-<li>The second item; <i>italicize</i> key words</li>
+<li> <h3><a href="#">Link 1</a></h3></li>
+<li> <h3><a href="#">Link 2</a></h3></li>
+<li> <h3><a href="#">Link 3</a></h3></li>
 </ul>
-<p>Improve your image by including an image. </p>
-<p><img src="http://www.mygifs.com/CoverImage.gif" alt="A Great HTML Resource"></p>
-<p>Add a link to your favorite <a href="https://www.dummies.com/">Web site</a>.
-Break up your page with a horizontal rule or two. </p>
-<hr>
-<p>Finally, link to <a href="page2.html">another page</a> in your own Web site.</p>
-<!-- And add a copyright notice.-->
-<p>&#169; Wiley Publishing, 2011</p>
+<!--column-1 ID style is floated right and used for content-->
+</div>
+<div id="column-1">
+<h1>Right Column Heading Here </h1>
+<p>Right column content here </p>
+<div class="box"><p>Box content</p></div>
+<div class="box"><p>Box content</p></div>
+<div class="box"><p>Box content</p></div>
+</div>
+<!--The clear class style clears (removes) float-->
+<div class="clear"></div>
+<h4>Contact info here </h4>
+</div>
 </body>
 </html>
+
